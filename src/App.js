@@ -1,6 +1,9 @@
 
 import React from "react"; 
 import "./App.css"; 
+// import { useNavigate } from "react-router-dom"; 
+import { BUTTON_TYPES } from "./components/Button"
+import Button from "./components/btn"
 
 /* 
 MacroTrack 
@@ -28,7 +31,12 @@ function App() {
       <header className="MacroTrack">
         <h1> <code> MacroTrack </code> </h1> 
       </header>
-      <center> <font size = "+3"> {dateFormat} </font> </center> 
+      <center> <font size = "+3"> {dateFormat} </font> 
+      <br/> <br/> <br/> 
+      <Button type={BUTTON_TYPES.TRACK} btnTxt='Track'/>   
+      <Button type={BUTTON_TYPES.EDIT} btnTxt='Edit'/> 
+      <Button type={BUTTON_TYPES.LOG} btnTxt='Log'/>   
+      </center> 
     </div>
   );
 }
