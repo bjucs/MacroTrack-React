@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   form input,
   form button {
@@ -126,6 +127,8 @@
     background: #ff6f47;
     cursor: pointer;
   }
+
+
   /* Transition */
   /*
   .select:hover::after {

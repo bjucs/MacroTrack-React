@@ -1,8 +1,9 @@
 
 import React from "react"; 
+// import { useState } from "react";
 import "./App.css"; 
 import { BUTTON_TYPES } from "./components/Button"; 
-import Button from "./components/btn"; 
+import RoutingButton from "./components/routingbtn"; 
 
 export default function Home() {
     /* Gets the current date in M/D/Y string format using current 
@@ -39,10 +40,11 @@ export default function Home() {
         <label> Fat: </label><textarea readOnly = {true} cols = "10" style = 
         {{"backgroundColor": "#665494"}}/> 
         <br/> <br/> <br/> 
-        <Button type={BUTTON_TYPES.TRACK} btnTxt='Track' onClick={() => { 
-        console.log("button clicked");}}/>     
-        <Button type={BUTTON_TYPES.EDIT} btnTxt='Edit'/>  
-        <Button type={BUTTON_TYPES.LOG} btnTxt='Log'/>   
+        <RoutingButton type={BUTTON_TYPES.TRACK} btnTxt='Track' 
+        routing="/tracking"/>     
+        <RoutingButton type={BUTTON_TYPES.EDIT} btnTxt='Edit' routing="/edit"/
+        >  
+        <RoutingButton type={BUTTON_TYPES.LOG} btnTxt='Log' routing="/log"/>   
         <br/> <br/> <br/> 
         <br/> <br/> <br/> 
         <br/> <br/> <br/> 
