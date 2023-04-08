@@ -4,9 +4,8 @@ MacroTrack now successfully logs and new added Food items
 
 <br/>
 
-
+![Screen Shot 2023-04-08 at 1 07 23 PM](https://user-images.githubusercontent.com/91577965/230734044-ca6b3ed6-0d9f-492e-9081-3c3a0d93fd6f.png)
 
 And updates it to the global homepage 
-![Screen Shot 2023-04-08 at 1 07 23 PM](https://user-images.githubusercontent.com/91577965/230734044-ca6b3ed6-0d9f-492e-9081-3c3a0d93fd6f.png)
 
 
