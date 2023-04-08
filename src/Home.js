@@ -4,6 +4,7 @@ import React from "react";
 import "./App.css"; 
 import { BUTTON_TYPES } from "./components/Button"; 
 import RoutingButton from "./components/routingbtn"; 
+import { globalFood } from './Tracking';
 
 export default function Home() {
     /* Gets the current date in M/D/Y string format using current 
@@ -29,16 +30,16 @@ export default function Home() {
         <center> <font size = "+3"> {dateFormat} </font>  
         <br/> <br/> <br/> 
         <label> Total Calories: </label> <textarea readOnly = {true} cols = 
-        "10" style = {{"backgroundColor": "#665494"}}/> 
+        "10" style = {{"backgroundColor": "#665494"}} value={globalFood.cals}/> 
         <br/> <br/> <br/> 
         <label> Protein: </label> <textarea readOnly = {true} cols = "10" style 
-        = {{"backgroundColor": "#665494"}}/> 
+        = {{"backgroundColor": "#665494"}} value={globalFood.protein}/> 
         <br/> <br/> <br/> 
         <label> Carbs: </label><textarea readOnly = {true} cols = "10" style = 
-        {{"backgroundColor": "#665494"}}/> 
+        {{"backgroundColor": "#665494"}} value={globalFood.carbs}/> 
         <br/> <br/> <br/> 
         <label> Fat: </label><textarea readOnly = {true} cols = "10" style = 
-        {{"backgroundColor": "#665494"}}/> 
+        {{"backgroundColor": "#665494"}} value={globalFood.fat}/> 
         <br/> <br/> <br/> 
         <RoutingButton type={BUTTON_TYPES.TRACK} btnTxt='Track' 
         routing="/tracking"/>     

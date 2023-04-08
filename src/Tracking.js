@@ -6,13 +6,20 @@ import RoutingButton from "./components/routingbtn";
 import ActionButton from "./components/actionbutton";
 import FoodClass from "./components/FoodClass";
 
+export const foodItems = [];
+export const globalFood = new FoodClass("Global", 0, 0, 0, 0); 
+
 export default function Tracking() { 
+    /* List of macro constants in order to create FoodClass, which is then 
+    going to be added to a global array of FoodClass items (i.e. your tracked 
+    items) */ 
     const [item, setItem] = useState(''); 
     const [cals, setCals] = useState(''); 
     const [protein, setProtein] = useState(''); 
     const [carbs, setCarbs] = useState(''); 
     const [fat, setFat] = useState(''); 
 
+    /* List of event handlers for such changes */ 
     const handleItemChange = (event) => { 
       setItem(event.target.value); 
     };
@@ -48,6 +55,11 @@ export default function Tracking() {
   
       // Create a new class object with the input values as properties
       const newItem = new FoodClass(item, parseInt(cals), parseInt(protein), parseInt(carbs), parseInt(fat));
+      foodItems.push(newItem); 
+      globalFood.addCals(parseInt(cals)); 
+      globalFood.addProtein(parseInt(protein)); 
+      globalFood.addCarbs(parseInt(carbs)); 
+      globalFood.addFat(parseInt(fat));  
       console.log(newItem);
 
       // Clear the input fields
