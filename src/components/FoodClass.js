@@ -21,5 +21,4 @@ class FoodClass {
     }
 }
 
-
 export default FoodClass;

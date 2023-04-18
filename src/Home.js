@@ -1,10 +1,9 @@
 
 import React from "react"; 
-// import { useState } from "react";
-import "./App.css"; 
 import { BUTTON_TYPES } from "./components/Button"; 
 import RoutingButton from "./components/routingbtn"; 
 import { globalFood } from './Tracking';
+import "./App.css"; 
 
 export default function Home() {
     /* Gets the current date in M/D/Y string format using current 

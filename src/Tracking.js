@@ -1,10 +1,10 @@
 
 import React, { useState } from "react";  
-import "./App.css"; 
 import { BUTTON_TYPES } from "./components/Button"; 
 import RoutingButton from "./components/routingbtn"; 
 import ActionButton from "./components/actionbutton";
 import FoodClass from "./components/FoodClass";
+import "./App.css"; 
 
 export const foodItems = [];
 export const globalFood = new FoodClass("Global", 0, 0, 0, 0); 
@@ -42,7 +42,7 @@ export default function Tracking() {
       }
   
       // Check if all fields are filled
-      if (!item || !cals || !protein || !carbs || !fat) {
+      if (!item || !cals) {
         alert('Please fill in all fields.');
         return;
       }
