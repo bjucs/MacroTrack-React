@@ -1,5 +1,5 @@
 
-You can run MacroTrack on localhost using react-react-app (type "npm start") if you pull the code, courtest of create-react-app. 
+You can run MacroTrack on localhost using react-react-app (type "npm start") if you pull the code, courtesy of create-react-app. 
 
 Current stretch goals include retaining data in MongoDB 
 (potentially using MERN Stack), separating the macros by day, and being able to edit incorrect information. 
