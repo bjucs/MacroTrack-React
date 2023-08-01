@@ -1,11 +1,10 @@
 # Information
 You can run MacroTrack on localhost using react-react-app (type ```npm start```) if you pull the code, courtesy of create-react-app. 
 
-Current stretch goals include retaining data in MongoDB 
-(potentially using MERN Stack), separating the macros by day, and being able to edit incorrect information. 
+A React web application using (mostly) TypeScript and some JavaScript for tracking macronutrients; uses react-minimal-pie-chart for data visualization as well.  
 
 # MacroTrack Home Screen <br/> 
-![Screen Shot 2023-04-08 at 1 07 23 PM](https://user-images.githubusercontent.com/91577965/230734044-ca6b3ed6-0d9f-492e-9081-3c3a0d93fd6f.png)
+<img width="717" alt="Screenshot 2023-07-31 at 11 34 42 PM" src="https://github.com/bjucs/macrotrack-react/assets/91577965/2974e4d6-7ca6-418e-8b18-b72fe7367ea4">
 <br/> 
 
 # MacroTrack Tracking Screen <br/> 
