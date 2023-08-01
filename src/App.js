@@ -1,4 +1,3 @@
-
 import React from "react"; 
 import "./App.css"; 
 import { BrowserRouter as Router, Route, Routes } from 
@@ -7,18 +6,6 @@ import Home from "./Home";
 import Tracking from "./Tracking"; 
 import Edit from "./Edit"; 
 import Log from "./Log"; 
-
-
-/* 
-MacroTrack  
-developed by Brian Ju, UMD 2025 
-Frameworks/Languages: React, JSX 
-
-Instructions to run: 
--cd into macrotrack
--"npm start"
-
-*/ 
 
 export default function App() {
   return (
