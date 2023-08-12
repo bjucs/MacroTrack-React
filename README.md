@@ -1,7 +1,7 @@
 # Information
 You can run MacroTrack on localhost using react-react-app (type ```npm start```) if you pull the code, courtesy of create-react-app. 
 
-A React web application using (mostly) TypeScript and some JavaScript for tracking macronutrients; uses react-minimal-pie-chart for data visualization as well.  
+A React web application front-end using (mostly) TypeScript and some JavaScript for tracking macronutrients; uses react-minimal-pie-chart for data visualization as well.  
 
 # MacroTrack Home Screen <br/> 
 <img width="717" alt="Screenshot 2023-07-31 at 11 34 42 PM" src="https://github.com/bjucs/macrotrack-react/assets/91577965/2974e4d6-7ca6-418e-8b18-b72fe7367ea4">
