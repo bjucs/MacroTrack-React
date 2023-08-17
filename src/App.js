@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from
 "react-router-dom"; 
 import Home from "./Home"; 
 import Tracking from "./Tracking"; 
-import Edit from "./Edit"; 
 import Log from "./Log"; 
 
 export default function App() {
@@ -15,7 +14,6 @@ export default function App() {
           <Route path="/" element={<Home />} /> 
           <Route path="/home" element={<Home />} />
           <Route path="/tracking" element={<Tracking />} /> 
-          <Route path="/edit" element={<Edit />} /> 
           <Route path="/log" element={<Log />} /> 
         </Routes> 
       </Router>
