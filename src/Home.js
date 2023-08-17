@@ -54,5 +54,5 @@ export default function Home() {
           <h3> <code> Created by Brian Ju </code> </h3>
         </center>
       </div>
-    );
+    )
   }
