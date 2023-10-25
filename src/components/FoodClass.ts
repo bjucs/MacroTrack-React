@@ -1,28 +1,28 @@
 class FoodClass {
-    item: string 
-    cals: number
-    protein: number
-    carbs: number
-    fat: number 
+    Item: string 
+    Calories: number
+    Protein: number
+    Carbs: number
+    Fat: number 
 
     constructor(item: string, cals: number, protein: number, carbs: number, fat: number) {
-      this.item = item
-      this.cals = cals
-      this.protein = protein
-      this.carbs = carbs
-      this.fat = fat
+      this.Item = item
+      this.Calories = cals
+      this.Protein = protein
+      this.Carbs = carbs
+      this.Fat = fat
     }
     addCals(amt: number) { 
-      this.cals += amt 
+      this.Calories += amt 
     }
     addProtein(amt: number) { 
-      this.protein += amt
+      this.Protein += amt
     }
     addCarbs(amt: number) { 
-      this.carbs += amt 
+      this.Carbs += amt 
     }
     addFat(amt: number) { 
-      this.fat += amt 
+      this.Fat += amt 
     }
 }
 

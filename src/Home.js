@@ -26,32 +26,38 @@ export default function Home() {
           <div style={{ display: "flex", width: '500px', height: '300px'}}>
             <div style={{ flex: 1 }}>
               <label> Total Calories: </label>
-              <textarea readOnly={true} cols="10" style={{ "backgroundColor": "#665494" }} value={globalFood.cals} />
+              <textarea readOnly={true} cols="10" style={{ "backgroundColor": "#665494", color: 'white' }} value={globalFood.Calories} />
               <br/>
               <br/>
               <label> Protein: </label>
-              <textarea readOnly={true} cols="10" style={{ "backgroundColor": "#665494" }} value={globalFood.protein} />
+              <textarea readOnly={true} cols="10" style={{ "backgroundColor": "#665494", color: 'white' }} value={globalFood.Protein} />
               <br/>
               <br/>
               <label> Carbs: </label>
-              <textarea readOnly={true} cols="10" style={{ "backgroundColor": "#665494" }} value={globalFood.carbs} />
+              <textarea readOnly={true} cols="10" style={{ "backgroundColor": "#665494", color: 'white' }} value={globalFood.Carbs} />
               <br/>
               <br/>
               <label> Fat: </label>
-              <textarea readOnly={true} cols="10" style={{ "backgroundColor": "#665494" }} value={globalFood.fat} />
+              <textarea readOnly={true} cols="10" style={{ "backgroundColor": "#665494", color: 'white' }} value={globalFood.Fat} />
             </div>
             <div style={{ flex: 1 }}>
               <PieChart data={[
-              { title: 'Protein', value: globalFood.protein > 0 ? globalFood.protein:0.01, color: '#89BCC4' },
-              { title: 'Carbs', value: globalFood.carbs > 0 ? globalFood.carbs:0.01, color: '#DEAFA6' },
-              { title: 'Fat', value: globalFood.fat > 0 ? globalFood.fat:0.01, color: '#917974' }
+              { title: 'Protein', value: globalFood.Protein > 0 ? globalFood.Protein:0.01, color: '#89BCC4' },
+              { title: 'Carbs', value: globalFood.Carbs > 0 ? globalFood.Carbs:0.01, color: '#DEAFA6' },
+              { title: 'Fat', value: globalFood.Fat > 0 ? globalFood.Fat:0.01, color: '#917974' }
               ]} style={{ height: '200px', width: '200px' }}/>
             </div>
           </div>
+          <code> Key: 
+            <text style={{ color: '#89BCC4' }}> Protein </text>  
+            <text style={{ color: '#DEAFA6' }}> Carbs </text>
+            <text style={{ color: '#917974' }}> Fat </text>
+          </code> 
+          <br/> <br/> 
           <RoutingButton type={ButtonTypes.TRACK} btnTxt='Track' routing="/tracking" />
           <RoutingButton type={ButtonTypes.LOG} btnTxt='Log' routing="/log" />
-          <br /> <br /> <br />
-          <h3> <code> Created by Brian Ju </code> </h3>
+          <br/> <br/> <br/>
+          <code> <a href="https://bjucs.github.io" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}> bjucs.github.io </a> </code>
         </center>
       </div>
     )
